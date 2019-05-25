@@ -2,7 +2,7 @@ use serde::{Deserialize};
 use std::{fs};
 
 
-#[derive(Deserialize)]
+#[derive(Debug, Deserialize)]
 pub struct JenkinsJob {
 
     // url of Jenkins instance including port
@@ -15,7 +15,7 @@ pub struct JenkinsJob {
     pub jobs: Vec<String>,
 }
 
-#[derive(Deserialize)]
+#[derive(Debug, Deserialize)]
 pub struct JenkinsConfig {
     // List of Jenkins jobs
     pub jobs: Vec<JenkinsJob>,
