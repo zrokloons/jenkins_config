@@ -1,0 +1,11 @@
+[package]
+name = "jenkins_config"
+version = "0.1.0"
+authors = ["Mathias de Paulis Nilsson <mathias.de.paulis.nilsson@gmain.com>"]
+edition = "2018"
+
+[dependencies]
+jenkins_api = "0.5.2"
+serde = { version = "1.0.90", features = ["derive"] }
+serde_yaml = "0.8.8"
+clap = "2.33.0"
